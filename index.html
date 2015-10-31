@@ -18,105 +18,37 @@
 	<body>
 		<aside id="sidebar" class="sidebar">
 			<div class="sidebar__inner">
-				<p class="sidebar__title">Настройка стиля<span class="sidebar__title__inner"><a id="set_off" href="#" class="sidebar__title__link">сбросить настройки</a></span></p>
-				<div class="sidebar__color">
-					<p class="color__text">Готовые цветовые решения</p>
-					<ul class="color__list">
-						<li class="color__item">
-							<input id="circl1" type="radio" name="raz" class="slider__checkbox">
-							<label for="circl1" class="slider__label"></label><a class="slider__link_circl1"></a>
-						</li>
-						<li class="color__item">
-							<input id="circl2" type="radio" name="raz" class="slider__checkbox">
-							<label for="circl2" class="slider__label"></label><a class="slider__link_circl2"></a>
-						</li>
-						<li class="color__item">
-							<input id="circl3" type="radio" name="raz" class="slider__checkbox">
-							<label for="circl3" class="slider__label"></label><a class="slider__link_circl3"></a>
-						</li>
-						<li class="color__item">
-							<input id="circl4" type="radio" name="raz" class="slider__checkbox">
-							<label for="circl4" class="slider__label"></label><a class="slider__link_circl4"></a>
-						</li>
-						<li class="color__item">
-							<input id="color-youself" type="radio" name="raz" class="slider__checkbox">
-							<label for="color-youself" class="slider__label">Свой вариант</label>
-						</li>
-					</ul>
+				<p class="sidebar__title sidebar__title_set">Настройка стиля<span class="sidebar__title__inner"><a id="set_off" href="#" class="sidebar__title__link">сбросить настройки</a></span></p>
+				<input id="id_msg" type="checkbox" class="slider__checkbox">
+				<label for="id_msg" class="slider__label_set slider__label">Отображать индикатор сообщений</label>
+				<input id="txt-welcome" type="checkbox" class="slider__checkbox">
+				<label for="txt-welcome" class="slider__label_set slider__label">Отображать текстовое приветствие</label>
+				<input type="text" placeholder="Введите текст приветствия" class="sidebar__txt-welcome">
+				<ul class="color-youself__list color-youself__list_set">
+					<li class="color-youself__item color-youself__item_set">
+						<p class="color-youself__text">Цвет фона</p>
+						<div class="wrap-input">
+							<input data-color="" id="colorpicker" class="color-youself__input">
+							<div class="color-youself__picker"><a class="color-youself__linkabout"></a></div>
+						</div>
+					</li>
+					<li class="color-youself__item color-youself__item_set">
+						<p class="color-youself__text">Цвет текста</p>
+						<div class="wrap-input">
+							<input data-color="" id="colorpicker" class="color-youself__input">
+							<div class="color-youself__picker"><a class="color-youself__linkabout"></a></div>
+						</div>
+					</li>
+				</ul>
+				<div class="slider__add-pick slider__add-pick_set">
+					<input id="show-pick" type="checkbox" class="slider__checkbox">
+					<label for="show-pick" class="slider__label">Отображать фото менеджера</label>
+					<p class="add-pick__text add-pick__text_set">или добавить изображение/логотип</p>
+					<button id="add-pick" class="add-pick add-pick_set">+ Выбрать изображение</button>
 				</div>
-				<div id="sidebar__color-youself" class="sidebar__color-youself">
-					<ul class="color-youself__list">
-						<li class="color-youself__item">
-							<p class="color-youself__text">Цвет основного фона</p>
-							<div class="wrap-input">
-								<input data-color="" id="colorpicker" class="color-youself__input">
-								<div class="color-youself__picker"><a class="color-youself__linkabout"></a></div>
-							</div>
-						</li>
-						<li class="color-youself__item">
-							<p class="color-youself__text">Цвет основного текста</p>
-							<div class="wrap-input">
-								<input data-color="" id="colorpicker" class="color-youself__input">
-								<div class="color-youself__picker"><a class="color-youself__linkabout"></a></div>
-							</div>
-						</li>
-						<li class="color-youself__item">
-							<p class="color-youself__text">Фон шапки виджета</p>
-							<div class="wrap-input">
-								<input data-color="" id="colorpicker" class="color-youself__input">
-								<div class="color-youself__picker"><a class="color-youself__linkabout"></a></div>
-							</div>
-						</li>
-						<li class="color-youself__item">
-							<p class="color-youself__text">Цвет текста в шапке</p>
-							<div class="wrap-input">
-								<input data-color="" id="colorpicker" class="color-youself__input">
-								<div class="color-youself__picker"><a class="color-youself__linkabout"></a></div>
-							</div>
-						</li>
-						<li class="color-youself__item">
-							<p class="color-youself__text">Цвет кнопок</p>
-							<div class="wrap-input">
-								<input data-color="" id="colorpicker" class="color-youself__input">
-								<div class="color-youself__picker"><a class="color-youself__linkabout"></a></div>
-							</div>
-						</li>
-						<li class="color-youself__item">
-							<p class="color-youself__text">Цвет значков кнопок</p>
-							<div class="wrap-input">
-								<input data-color="" id="colorpicker" class="color-youself__input">
-								<div class="color-youself__picker"><a class="color-youself__linkabout"></a></div>
-							</div>
-						</li>
-						<li class="color-youself__item">
-							<p class="color-youself__text">Фон инпута</p>
-							<div class="wrap-input">
-								<input data-color="" id="colorpicker" class="color-youself__input">
-								<div class="color-youself__picker"><a class="color-youself__linkabout"></a></div>
-							</div>
-						</li>
-						<li class="color-youself__item">
-							<p class="color-youself__text">Цвет текста инпута</p>
-							<div class="wrap-input">
-								<input data-color="" id="colorpicker" class="color-youself__input">
-								<div class="color-youself__picker"><a class="color-youself__linkabout"></a></div>
-							</div>
-						</li>
-						<li class="color-youself__item">
-							<p class="color-youself__text">Цвет текста подвала</p>
-							<div class="wrap-input">
-								<input data-color="" id="colorpicker" class="color-youself__input">
-								<div class="color-youself__picker"><a class="color-youself__linkabout"></a></div>
-							</div>
-						</li>
-						<li class="color-youself__item">
-							<p class="color-youself__text">Цвет значков шапки</p>
-							<div class="wrap-input">
-								<input data-color="" id="colorpicker" class="color-youself__input">
-								<div class="color-youself__picker"><a class="color-youself__linkabout"></a></div>
-							</div>
-						</li>
-					</ul>
+				<div class="wrapp wrapp_set">
+					<div class="add-pick__pick add-pick__pick_set"></div>
+					<p class="add-pick__text_wr add-pick__text_wr_set"><a href="#" class="pick__text_wr_inner">Удалить изображение</a></p>
 				</div>
 				<div class="sidebar__position">
 					<p class="position__text">Выберите начальное положение</p>
@@ -130,16 +62,32 @@
 						<p class="sliders__text">По вертикале</p><div id="slider-range-min-1" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"></span></div>
 					</div>
 				</div>
-				<div class="slider__add-pick">
-					<p class="add-pick__text">Добавить изображение</p>
-					<input id="show-pick" type="checkbox" class="slider__checkbox">
-					<label for="show-pick" class="slider__label">Отображать фото менеджера</label>
-					<p class="add-pick__text add-pick__text_set">или добавить изображение/логотип</p>
-					<button id="add-pick" class="add-pick">+ Выбрать изображение</button>
-					<div class="wrapp">
-						<div class="add-pick__pick"></div>
-						<p class="add-pick__text_wr"><a href="#" class="pick__text_wr_inner">Удалить изображение</a></p>
-					</div>
+				<ul class="color-youself__list color-youself__list_set color-youself__list_buttom">
+					<li class="color-youself__item color-youself__item_set color-youself__item_bottom">
+						<p class="color-youself__text">Цвет кнопки</p>
+						<div class="wrap-input">
+							<input data-color="" id="colorpicker" class="color-youself__input">
+							<div class="color-youself__picker"><a class="color-youself__linkabout"></a></div>
+						</div>
+					</li>
+					<li class="color-youself__item color-youself__item_set color-youself__item_bottom-last">
+						<p class="color-youself__text text_set">Цвет кнопри при наведении</p>
+						<div class="wrap-input">
+							<input data-color="" id="colorpicker" class="color-youself__input">
+							<div class="color-youself__picker"><a class="color-youself__linkabout"></a></div>
+						</div>
+					</li>
+				</ul>
+				<p class="sliders__text">
+					Непрозрачность
+					<div id="slider-range-min-2" class="ui-slider ui-slider_set ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"></span></div>
+				</p>
+				<div class="slider__add-sound">
+					<input id="sound" type="checkbox" class="slider__checkbox">
+					<label for="sound" class="slider__label">Звук при нажатии</label>
+					<div class="play"></div>
+					<p class="add-pick__text add-pick__text_set">или загрузить свой звук</p>
+					<button id="add-sound" class="add-sound">+ Выбрать файл</button>
 				</div>
 				<button id="save-next" class="save-next">Сохранить и продолжить</button>
 				<div id="sidebar__trigger" class="sidebar__trigger"></div>

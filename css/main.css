@@ -930,7 +930,7 @@ footer {
   border: 1px solid adb6ca;
   text-align: center;
   font-size: 14px;
-  mso-font-width: 400;
+  font-width: 400;
   top: -10px;
   position: relative;
 }
@@ -1038,17 +1038,19 @@ footer {
   top: -15px;
   position: relative;
 }
-.sidebar__color-youself .color-youself__list, .sidebar__color-youself .color-youself__item {
+
+.color-youself__list, .color-youself__item {
   display: inline-block;
 }
-.sidebar__color-youself .color-youself__item {
+
+.color-youself__item {
   font-size: 14px;
   font-weight: 400;
   width: 155px;
   height: 60px;
   margin-bottom: 18.5px;
 }
-.sidebar__color-youself .color-youself__item .color-youself__input {
+.color-youself__item .color-youself__input {
   padding-left: 5px;
   position: relative;
   top: -10px;
@@ -1066,17 +1068,17 @@ footer {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-.sidebar__color-youself .color-youself__item .color-youself__input:focus {
+.color-youself__item .color-youself__input:focus {
   outline: none;
 }
-.sidebar__color-youself .color-youself__item .wrap-input {
+.color-youself__item .wrap-input {
   padding-left: 10px;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.sidebar__color-youself .color-youself__item .color-youself__picker {
+.color-youself__item .color-youself__picker {
   position: relative;
-  top: 4px;
+  top: 3px;
   display: inline-block;
   background: #323232;
   -webkit-border-radius: 0 5px 5px 0;
@@ -1086,12 +1088,12 @@ footer {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   width: 25px;
-  height: 36px;
+  height: 35.5px;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   border: 1px solid #323232;
 }
-.sidebar__color-youself .color-youself__item .color-youself__picker::before {
+.color-youself__item .color-youself__picker::before {
   content: "#";
   display: block;
   position: absolute;
@@ -1102,7 +1104,7 @@ footer {
   font-size: 14px;
   font-weight: 400;
 }
-.sidebar__color-youself .color-youself__item .color-youself__linkabout {
+.color-youself__item .color-youself__linkabout {
   width: 100%;
   height: 100%;
   display: block;
@@ -1112,6 +1114,179 @@ footer {
 /**********Color piker *************/
 .ui-dialog-titlebar, .ui-colorpicker-preview-container, .ui-colorpicker-hsv-container, .ui-colorpicker-rgb-container, .ui-colorpicker-alpha-container, .ui-colorpicker-hex-input, .ui-colorpicker-hex, .ui-dialog-buttonpane {
   display: none;
+}
+
+/****************** Sidebar for Design Button *************/
+.sidebar__title_set {
+  margin-bottom: 24px;
+}
+
+.slider__label_set {
+  display: block;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  padding-bottom: 5px;
+}
+
+.sidebar__txt-welcome {
+  width: 260px;
+  height: 44px;
+  position: relative;
+  left: 27px;
+  top: -3px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #adb6ca;
+  padding-left: 15px;
+  color: #6c6c6c;
+  margin-bottom: 10px;
+}
+.sidebar__txt-welcome:focus {
+  outline: none;
+}
+
+.color-youself__list_set .color-youself__item {
+  width: 120px;
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+.color-youself__list_set .color-youself__text {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.slider__add-pick_set {
+  padding-left: 30px;
+}
+
+.add-pick__pick_set {
+  width: 50px;
+  height: 50px;
+  background-size: 50px 50px;
+}
+
+.wrapp_set {
+  margin-bottom: 25px;
+  padding-left: 30px;
+}
+
+.add-pick_set {
+  margin-bottom: 10px;
+}
+
+.add-pick__text_wr_set {
+  top: 10px;
+  left: 90px;
+}
+
+.color-youself__list_buttom {
+  margin-top: -34px;
+  margin-left: -17px;
+}
+
+.text_set {
+  width: 180px;
+}
+
+.add-sound {
+  margin-top: 5px;
+  margin-bottom: 60px;
+  border: 1px solid #adb6ca;
+  width: 196px;
+  min-height: 32px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #4c637b;
+  color: #fff;
+  border: 1px solid adb6ca;
+  text-align: center;
+  font-size: 14px;
+  font-width: 400;
+  position: relative;
+}
+.add-sound:active, .add-sound:focus {
+  outline: none;
+  color: #ffffff;
+  background-color: #286090;
+  border-color: #122b40;
+}
+.add-sound:hover {
+  outline: none;
+  color: #ffffff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+
+.ui-slider-handle {
+  display: block;
+  cursor: pointer;
+  border: none !important;
+  background: url("../img/check.png") no-repeat center !important;
+  top: -3px !important;
+  position: relative;
+  /*margin-top: 10px;*/
+  width: 24px !important;
+  height: 24px !important;
+  outline: none;
+}
+
+.ui-slider {
+  margin-bottom: 20px;
+  cursor: pointer;
+  margin-left: 5px;
+  border: none !important;
+  background: #63768b !important;
+  -moz-border-radius: 10px;
+  -weblit-border-radius: 10px;
+  border-radius: 10px;
+  height: 15px;
+  width: 225px;
+  -webkit-box-shadow: inset 0px 2px 3px #485360;
+  -moz-box-shadow: inset 0px 2px 3px #485360;
+  box-shadow: inset 0px 2px 3px #485360;
+}
+
+.ui-slider-range {
+  -webkit-box-shadow: inset 0px 1px 3px #485360;
+  -moz-box-shadow: inset 0px 1px 3px #485360;
+  box-shadow: inset 0px 1px 3px #485360;
+  /*border: none !important;*/
+  background: #79c149 !important;
+  -moz-border-radius: 10px;
+  -weblit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.slider__add-sound {
+  position: relative;
+  margin-top: 5px;
+}
+.slider__add-sound .play {
+  cursor: pointer;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: url("../img/play.png") no-repeat center;
+  top: 0;
+  left: 200px;
+}
+.slider__add-sound .slider__label {
+  padding-left: 28px;
+  padding-bottom: 6px;
+  display: block;
+  margin-bottom: 12px;
+}
+.slider__add-sound .pick__text_set {
+  display: block;
+  margin-bottom: 15px;
 }
 
 body {
