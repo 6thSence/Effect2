@@ -5,52 +5,124 @@
 <html lang="ru_RU">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<meta name="viewport" content="device-width"><!-- bower:css -->
-		<!-- endbower -->
-		<script src="bower/modernizr/modernizr.js"></script><link rel="stylesheet" type="text/css" href="./ui/jquery-ui.css">
+		<meta name="viewport" content="device-width">
+		<script src="js/modernizr.js"></script><link rel="stylesheet" type="text/css" href="./ui/jquery-ui.css">
 		<link rel="stylesheet" type="text/css" href="./ui/jquery-ui.structure.css">
 		<link rel="stylesheet" type="text/css" href="./ui/jquery-ui.theme.css">
 		<link rel="stylesheet" type="text/css" href="./ui/jquery.rating.css">
 		<link rel="stylesheet" type="text/css" href="./css/select2.css">
 		<link rel="stylesheet" type="text/css" href="./css/main.css">
-		<title>
-		</title>
+		<title>Настройка стиля</title>
 	</head>
 	<body>
-		<sidebar id="sidebar" class="sidebar">
+		<aside id="sidebar" class="sidebar">
 			<div class="sidebar__inner">
-				<p class="sidebar__title">Настройка стиля<span class="sidebar__title__inner"><a href="#" class="sidebar__title__link">сбросить настройки</a></span></p>
+				<p class="sidebar__title">Настройка стиля<span class="sidebar__title__inner"><a id="set_off" href="#" class="sidebar__title__link">сбросить настройки</a></span></p>
 				<div class="sidebar__color">
 					<p class="color__text">Готовые цветовые решения</p>
 					<ul class="color__list">
 						<li class="color__item">
-							<input id="circl1" type="checkbox" class="slider__checkbox">
+							<input id="circl1" type="radio" name="raz" class="slider__checkbox">
 							<label for="circl1" class="slider__label"></label><a class="slider__link_circl1"></a>
 						</li>
 						<li class="color__item">
-							<input id="circl2" type="checkbox" class="slider__checkbox">
+							<input id="circl2" type="radio" name="raz" class="slider__checkbox">
 							<label for="circl2" class="slider__label"></label><a class="slider__link_circl2"></a>
 						</li>
 						<li class="color__item">
-							<input id="circl3" type="checkbox" class="slider__checkbox">
+							<input id="circl3" type="radio" name="raz" class="slider__checkbox">
 							<label for="circl3" class="slider__label"></label><a class="slider__link_circl3"></a>
 						</li>
 						<li class="color__item">
-							<input id="circl4" type="checkbox" class="slider__checkbox">
+							<input id="circl4" type="radio" name="raz" class="slider__checkbox">
 							<label for="circl4" class="slider__label"></label><a class="slider__link_circl4"></a>
 						</li>
 						<li class="color__item">
-							<input id="item" type="checkbox" class="slider__checkbox">
-							<label for="item" class="slider__label">Свое положение</label>
+							<input id="color-youself" type="radio" name="raz" class="slider__checkbox">
+							<label for="color-youself" class="slider__label">Свой вариант</label>
+						</li>
+					</ul>
+				</div>
+				<div id="sidebar__color-youself" class="sidebar__color-youself">
+					<ul class="color-youself__list">
+						<li class="color-youself__item">
+							<p class="color-youself__text">Цвет основного фона</p>
+							<div class="wrap-input">
+								<input data-color="" class="color-youself__input">
+								<div class="color-youself__picker"><a class="color-youself__linkabout"></a></div>
+							</div>
+						</li>
+						<li class="color-youself__item">
+							<p class="color-youself__text">Цвет основного текста</p>
+							<div class="wrap-input">
+								<input data-color="" class="color-youself__input">
+								<div class="color-youself__picker"><a class="color-youself__linkabout"></a></div>
+							</div>
+						</li>
+						<li class="color-youself__item">
+							<p class="color-youself__text">Фон шапки виджета</p>
+							<div class="wrap-input">
+								<input data-color="" class="color-youself__input">
+								<div class="color-youself__picker"><a class="color-youself__linkabout"></a></div>
+							</div>
+						</li>
+						<li class="color-youself__item">
+							<p class="color-youself__text">Цвет текста в шапке</p>
+							<div class="wrap-input">
+								<input data-color="" class="color-youself__input">
+								<div class="color-youself__picker"><a class="color-youself__linkabout"></a></div>
+							</div>
+						</li>
+						<li class="color-youself__item">
+							<p class="color-youself__text">Цвет кнопок</p>
+							<div class="wrap-input">
+								<input data-color="" class="color-youself__input">
+								<div class="color-youself__picker"><a class="color-youself__linkabout"></a></div>
+							</div>
+						</li>
+						<li class="color-youself__item">
+							<p class="color-youself__text">Цвет значков кнопок</p>
+							<div class="wrap-input">
+								<input data-color="" class="color-youself__input">
+								<div class="color-youself__picker"><a class="color-youself__linkabout"></a></div>
+							</div>
+						</li>
+						<li class="color-youself__item">
+							<p class="color-youself__text">Фон инпута</p>
+							<div class="wrap-input">
+								<input data-color="" class="color-youself__input">
+								<div class="color-youself__picker"><a class="color-youself__linkabout"></a></div>
+							</div>
+						</li>
+						<li class="color-youself__item">
+							<p class="color-youself__text">Цвет текста инпута</p>
+							<div class="wrap-input">
+								<input data-color="" class="color-youself__input">
+								<div class="color-youself__picker"><a class="color-youself__linkabout"></a></div>
+							</div>
+						</li>
+						<li class="color-youself__item">
+							<p class="color-youself__text">Цвет текста подвала</p>
+							<div class="wrap-input">
+								<input data-color="" class="color-youself__input">
+								<div class="color-youself__picker"><a class="color-youself__linkabout"></a></div>
+							</div>
+						</li>
+						<li class="color-youself__item">
+							<p class="color-youself__text">Цвет значков шапки</p>
+							<div class="wrap-input">
+								<input data-color="" class="color-youself__input">
+								<div class="color-youself__picker"><a class="color-youself__linkabout"></a></div>
+							</div>
 						</li>
 					</ul>
 				</div>
 				<div class="sidebar__position">
 					<p class="position__text">Выберите начальное положение</p>
 					<select id="select-bar" class="position__ui">Свое положение
-						<option class="position__option">Свое положение #1</option>
-						<option class="position__option">Свое положение #2</option>
-						<option class="position__option">Свое положение #3</option>
+						<option value="1" class="position__option">Свое положение #1</option>
+						<option value="2" class="position__option">Свое положение #2</option>
+						<option value="3" class="position__option">Свое положение #3</option>
 					</select>
 					<div class="position__sliders">
 						<p class="sliders__text">По горизонтали</p><div id="slider-range-min" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"></span></div>
@@ -69,8 +141,9 @@
 					</div>
 				</div>
 				<button id="save-next" class="save-next">Сохранить и продолжить</button>
+				<div id="sidebar__trigger" class="sidebar__trigger"></div>
 			</div>
-		</sidebar><script src="./js/jquery.js"></script>
+		</aside><script src="./js/jquery.js"></script>
 		<script src="./ui/jquery-ui.js"></script>
 		<script src="./ui/spinner.js"></script>
 		<script src="js/select2.js"></script>

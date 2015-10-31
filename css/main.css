@@ -694,7 +694,6 @@ footer {
   font-weight: 300;
   font-size: 16px;
   color: #6c6c6c;
-  min-height: 100%;
   height: 100%;
   position: absolute;
   left: 0;
@@ -703,12 +702,23 @@ footer {
   background: url("../img/close.png") no-repeat 360px 8px, url("../img/push_left.png") no-repeat 359px 50%, #262626;
 }
 
+.sidebar__trigger {
+  cursor: pointer;
+  position: absolute;
+  width: 30px;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+
 .sidebar__inner {
+  overflow-y: scroll;
+  overflow-x: hidden;
   cursor: auto;
   background: #ffffff;
   height: 100%;
   width: 350px;
-  padding: 29px 16px;
+  padding: 29px 0 29px 16px;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -1004,6 +1014,98 @@ footer {
   font-family: Open Sans;
   font-size: 14px;
   color: #6c6c6c;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #e5e5e5;
+  display: block;
+  margin-right: 5px;
+}
+
+/******* color youself *******/
+.sidebar__color-youself {
+  margin-bottom: 15px;
+  top: -15px;
+  position: relative;
+}
+.sidebar__color-youself .color-youself__list, .sidebar__color-youself .color-youself__item {
+  display: inline-block;
+}
+.sidebar__color-youself .color-youself__item {
+  font-size: 14px;
+  font-weight: 400;
+  width: 155px;
+  height: 60px;
+  margin-bottom: 18.5px;
+}
+.sidebar__color-youself .color-youself__item .color-youself__input {
+  padding-left: 5px;
+  position: relative;
+  top: -10px;
+  left: 5px;
+  width: 70px;
+  height: 35px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #323232;
+  display: inline-block;
+  -webkit-border-radius: 5px 0 0 5px;
+  -moz-border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.sidebar__color-youself .color-youself__item .color-youself__input:focus {
+  outline: none;
+}
+.sidebar__color-youself .color-youself__item .wrap-input {
+  padding-left: 10px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.sidebar__color-youself .color-youself__item .color-youself__picker {
+  position: relative;
+  top: 4px;
+  display: inline-block;
+  background: #323232;
+  -webkit-border-radius: 0 5px 5px 0;
+  -moz-border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  width: 25px;
+  height: 36px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #323232;
+}
+.sidebar__color-youself .color-youself__item .color-youself__picker::before {
+  content: "#";
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: -80px;
+  color: #323232;
+  font-size: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+}
+.sidebar__color-youself .color-youself__item .color-youself__linkabout {
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: pointer;
 }
 
 body {
