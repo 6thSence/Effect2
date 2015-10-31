@@ -315,7 +315,7 @@ $circls: sprite-map('circls/*.png', $spacing: 70px);
 
 
 .sidebar__color-youself{
-  //display: none;
+  display: none;
   margin-bottom:15px ;
   top: -15px;position: relative;
   .color-youself__list, .color-youself__item {
@@ -376,3 +376,10 @@ $circls: sprite-map('circls/*.png', $spacing: 70px);
   }
 }
 
+/**********Color piker *************/
+.ui-dialog-titlebar,.ui-colorpicker-preview-container, .ui-colorpicker-hsv-container,.ui-colorpicker-rgb-container,.ui-colorpicker-alpha-container,.ui-colorpicker-hex-input,.ui-colorpicker-hex,.ui-dialog-buttonpane   {
+  display: none;
+}
+.ui-colorpicker-map-pointer {
+  //width: 50px !important;
+}

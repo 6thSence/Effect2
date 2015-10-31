@@ -1033,6 +1033,7 @@ footer {
 
 /******* color youself *******/
 .sidebar__color-youself {
+  display: none;
   margin-bottom: 15px;
   top: -15px;
   position: relative;
@@ -1106,6 +1107,11 @@ footer {
   height: 100%;
   display: block;
   cursor: pointer;
+}
+
+/**********Color piker *************/
+.ui-dialog-titlebar, .ui-colorpicker-preview-container, .ui-colorpicker-hsv-container, .ui-colorpicker-rgb-container, .ui-colorpicker-alpha-container, .ui-colorpicker-hex-input, .ui-colorpicker-hex, .ui-dialog-buttonpane {
+  display: none;
 }
 
 body {
