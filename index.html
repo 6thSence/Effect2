@@ -1,0 +1,74 @@
+<!DOCTYPE html><!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="ru_RU">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="device-width"><!-- bower:css -->
+		<!-- endbower -->
+		<script src="bower/modernizr/modernizr.js"></script><link rel="stylesheet" type="text/css" href="./ui/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="./ui/jquery-ui.structure.css">
+		<link rel="stylesheet" type="text/css" href="./ui/jquery-ui.theme.css">
+		<link rel="stylesheet" type="text/css" href="./ui/jquery.rating.css">
+		<link rel="stylesheet" type="text/css" href="./css/main.css">
+		<title>
+		</title>
+	</head>
+	<body>
+		<sidebar id="sidebar" class="sidebar">
+			<div class="sidebar__inner">
+				<p class="sidebar__title">Настройка стиля<span class="sidebar__title__inner"><a class="sidebar__title__link">сбросить настройки</a></span></p>
+				<div class="sidebar__color">
+					<p class="color__text">Готовые цветовые решения</p>
+					<ul class="color__list">
+						<li class="color__item">
+							<input id="circl1" type="checkbox" class="slider__checkbox">
+							<label for="circl1" class="slider__label"></label><a class="slider__link_circl1"></a>
+						</li>
+						<li class="color__item">
+							<input id="circl2" type="checkbox" class="slider__checkbox">
+							<label for="circl2" class="slider__label"></label><a class="slider__link_circl2"></a>
+						</li>
+						<li class="color__item">
+							<input id="circl3" type="checkbox" class="slider__checkbox">
+							<label for="circl3" class="slider__label"></label><a class="slider__link_circl3"></a>
+						</li>
+						<li class="color__item">
+							<input id="circl4" type="checkbox" class="slider__checkbox">
+							<label for="circl4" class="slider__label"></label><a class="slider__link_circl4"></a>
+						</li>
+						<li class="color__item">
+							<input id="item" type="checkbox" class="slider__checkbox">
+							<label for="item" class="slider__label">Свое положение</label>
+						</li>
+					</ul>
+				</div>
+				<div class="sidebar__position">
+					<p class="position__text">Выберите начальное положение</p>
+					<select class="position__ui">Свое положение</select>
+					<div class="position__sliders">
+						<p class="sliders__text">По горизонтали</p><div id="slider-range-min" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"></span></div>
+						<p class="sliders__text">По вертикале</p><div id="slider-range-min-1" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"></span></div>
+					</div>
+				</div>
+				<div class="slider__add-pick">
+					<p class="add-pick__text">Добавить изображение</p>
+					<input id="show-pick" type="checkbox" class="slider__checkbox">
+					<label for="show-pick" class="slider__label">Отображать фото менеджера</label>
+					<p class="add-pick__text add-pick__text_set">или добавить изображение/логотип</p>
+					<button id="add-pick" class="add-pick">+ Выбрать изображение</button>
+					<div class="wrapp">
+						<div class="add-pick__pick"></div>
+						<p class="add-pick__text_wr"><a href="#" class="pick__text_wr_inner">Удалить изображение</a></p>
+					</div>
+				</div>
+				<button id="save-next" class="save-next">Сохранить и продолжить</button>
+			</div>
+		</sidebar><script src="./js/jquery.js"></script>
+		<script src="./ui/jquery-ui.js"></script>
+		<script src="./ui/spinner.js"></script>
+		<script src="./ui/jquery.rating.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
