@@ -29,6 +29,8 @@
     padding-left: 20px;
    }
   &__link{
+    text-decoration: none;
+    color: #000;
     cursor: pointer;
     border-bottom: 1px dashed;
     &:hover {
@@ -100,11 +102,36 @@ $circls: sprite-map('circls/*.png', $spacing: 70px);
   .position__text {
     margin-bottom: 5px;
   }
+  .select2-arrow {
+    border: none !important;
+    background: url("../img/select_open.png") no-repeat left !important;
+  }
+  .select2-dropdown-open  .select2-arrow {
+    border: none !important;
+    background: url("../img/select_close.png") no-repeat left !important;
+  }
+
+  .select2-choice {
+    height: 37px!important;
+    background: none;
+    border: none;
+    padding-top: 5px;
+    &:focus, &:active, &:hover {
+      outline: none !important;
+    }
+  }
   .position__ui {
-    margin-bottom: 20px;
-    width: 249px;
-    height: 40px;
-    border: 1px solid #adb6ca;
+    margin-bottom: 20px !important;
+    width: 249px!important;
+    height: 40px!important;
+    border: 1px solid #adb6ca!important;
+    @include border-radius(7px);
+  }
+  .select2-container {
+    margin-bottom: 20px !important;
+    width: 249px!important;
+    height: 43px!important;
+    border: 1px solid #adb6ca!important;
     @include border-radius(7px);
   }
   .position__sliders {
@@ -248,4 +275,12 @@ $circls: sprite-map('circls/*.png', $spacing: 70px);
   &:hover {
     background-color: #4eb508;
   }
+}
+.select2-search {
+  display: none !important;
+}
+.position__option {
+  font-family: Open Sans;
+  font-size: 14px;
+  color: #6c6c6c;
 }

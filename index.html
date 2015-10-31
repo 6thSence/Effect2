@@ -11,6 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="./ui/jquery-ui.structure.css">
 		<link rel="stylesheet" type="text/css" href="./ui/jquery-ui.theme.css">
 		<link rel="stylesheet" type="text/css" href="./ui/jquery.rating.css">
+		<link rel="stylesheet" type="text/css" href="./css/select2.css">
 		<link rel="stylesheet" type="text/css" href="./css/main.css">
 		<title>
 		</title>
@@ -18,7 +19,7 @@
 	<body>
 		<sidebar id="sidebar" class="sidebar">
 			<div class="sidebar__inner">
-				<p class="sidebar__title">Настройка стиля<span class="sidebar__title__inner"><a class="sidebar__title__link">сбросить настройки</a></span></p>
+				<p class="sidebar__title">Настройка стиля<span class="sidebar__title__inner"><a href="#" class="sidebar__title__link">сбросить настройки</a></span></p>
 				<div class="sidebar__color">
 					<p class="color__text">Готовые цветовые решения</p>
 					<ul class="color__list">
@@ -46,7 +47,11 @@
 				</div>
 				<div class="sidebar__position">
 					<p class="position__text">Выберите начальное положение</p>
-					<select class="position__ui">Свое положение</select>
+					<select id="select-bar" class="position__ui">Свое положение
+						<option class="position__option">Свое положение #1</option>
+						<option class="position__option">Свое положение #2</option>
+						<option class="position__option">Свое положение #3</option>
+					</select>
 					<div class="position__sliders">
 						<p class="sliders__text">По горизонтали</p><div id="slider-range-min" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"></span></div>
 						<p class="sliders__text">По вертикале</p><div id="slider-range-min-1" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"></span></div>
@@ -68,6 +73,7 @@
 		</sidebar><script src="./js/jquery.js"></script>
 		<script src="./ui/jquery-ui.js"></script>
 		<script src="./ui/spinner.js"></script>
+		<script src="js/select2.js"></script>
 		<script src="./ui/jquery.rating.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
