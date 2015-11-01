@@ -57,7 +57,7 @@
   padding-left: 25px ;
   background: url('../img/checkbox.png') no-repeat left;
 }
-.slider__label:hover,.slider__checkbox:checked + .slider__label {
+.slider__checkbox:checked + .slider__label {
   background: url('../img/checkbox_active.png') no-repeat left;
 }
 .slider__color {
