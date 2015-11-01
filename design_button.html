@@ -14,13 +14,13 @@
 		<title>Настройка стиля</title>
 	</head>
 	<body>
-		<aside id="sidebar" class="sidebar">
+		<aside id="sidebar" class="sidebar open">
 			<div class="sidebar__inner">
 				<p class="sidebar__title sidebar__title_set">Настройка стиля<span class="sidebar__title__inner"><a id="set_off" href="#" class="sidebar__title__link">сбросить настройки</a></span></p>
 				<input id="id_msg" type="checkbox" class="slider__checkbox">
-				<label for="id_msg" class="slider__label_set slider__label">Отображать индикатор сообщений</label>
+				<label unselectable="on" for="id_msg" class="slider__label_set slider__label">Отображать индикатор сообщений</label>
 				<input id="txt-welcome" type="checkbox" class="slider__checkbox">
-				<label for="txt-welcome" class="slider__label_set slider__label">Отображать текстовое приветствие</label>
+				<label unselectable="on" for="txt-welcome" class="slider__label_set slider__label">Отображать текстовое приветствие</label>
 				<input type="text" placeholder="Введите текст приветствия" class="sidebar__txt-welcome">
 				<ul class="color-youself__list color-youself__list_set">
 					<li class="color-youself__item color-youself__item_set">
@@ -40,7 +40,7 @@
 				</ul>
 				<div class="slider__add-pick slider__add-pick_set">
 					<input id="show-pick" type="checkbox" class="slider__checkbox">
-					<label for="show-pick" class="slider__label">Отображать фото менеджера</label>
+					<label unselectable="on" for="show-pick" class="slider__label">Отображать фото менеджера</label>
 					<p class="add-pick__text add-pick__text_set">или добавить изображение/логотип</p>
 					<button id="add-pick" class="add-pick add-pick_set">+ Выбрать изображение</button>
 				</div>
@@ -57,7 +57,7 @@
 					</select>
 					<div class="position__sliders">
 						<p class="sliders__text">По горизонтали</p><div id="slider-range-min" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"></span></div>
-						<p class="sliders__text">По вертикале</p><div id="slider-range-min-1" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"></span></div>
+						<p class="sliders__text">По вертикали</p><div id="slider-range-min-1" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"></span></div>
 					</div>
 				</div>
 				<ul class="color-youself__list color-youself__list_set color-youself__list_buttom">
@@ -69,7 +69,7 @@
 						</div>
 					</li>
 					<li class="color-youself__item color-youself__item_set color-youself__item_bottom-last">
-						<p class="color-youself__text text_set">Цвет кнопри при наведении</p>
+						<p class="color-youself__text text_set">Цвет кнопки при наведении</p>
 						<div class="wrap-input">
 							<input data-color="" class="color-youself__input">
 							<div class="color-youself__picker"><a class="color-youself__linkabout"></a></div>
@@ -82,7 +82,7 @@
 				</p>
 				<div class="slider__add-sound">
 					<input id="sound" type="checkbox" class="slider__checkbox">
-					<label for="sound" class="slider__label">Звук при нажатии</label>
+					<label unselectable="on" for="sound" class="slider__label">Звук при нажатии</label>
 					<div class="play"></div>
 					<p class="add-pick__text add-pick__text_set">или загрузить свой звук</p>
 					<button id="add-sound" class="add-sound">+ Выбрать файл</button>

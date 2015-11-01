@@ -14,31 +14,31 @@
 		<title>Настройка стиля</title>
 	</head>
 	<body>
-		<aside id="sidebar" class="sidebar">
+		<aside id="sidebar" class="sidebar open">
 			<div class="sidebar__inner">
 				<p class="sidebar__title">Настройка стиля<span class="sidebar__title__inner"><a id="set_off" href="#" class="sidebar__title__link">сбросить настройки</a></span></p>
 				<div class="sidebar__color">
 					<p class="color__text">Готовые цветовые решения</p>
 					<ul class="color__list">
 						<li class="color__item">
-							<input id="circl1" type="radio" name="raz" class="slider__checkbox">
-							<label for="circl1" class="slider__label"></label><a class="slider__link_circl1"></a>
+							<input id="circl1" type="radio" name="raz" class="slider__checkbox" checked="">
+							<label unselectable="on" for="circl1" class="slider__label"></label><a class="slider__link_circl1"></a>
 						</li>
 						<li class="color__item">
 							<input id="circl2" type="radio" name="raz" class="slider__checkbox">
-							<label for="circl2" class="slider__label"></label><a class="slider__link_circl2"></a>
+							<label unselectable="on" for="circl2" class="slider__label"></label><a class="slider__link_circl2"></a>
 						</li>
 						<li class="color__item">
 							<input id="circl3" type="radio" name="raz" class="slider__checkbox">
-							<label for="circl3" class="slider__label"></label><a class="slider__link_circl3"></a>
+							<label unselectable="on" for="circl3" class="slider__label"></label><a class="slider__link_circl3"></a>
 						</li>
 						<li class="color__item">
 							<input id="circl4" type="radio" name="raz" class="slider__checkbox">
-							<label for="circl4" class="slider__label"></label><a class="slider__link_circl4"></a>
+							<label unselectable="on" for="circl4" class="slider__label"></label><a class="slider__link_circl4"></a>
 						</li>
 						<li class="color__item">
 							<input id="color-youself" type="radio" name="raz" class="slider__checkbox">
-							<label for="color-youself" class="slider__label">Свой вариант</label>
+							<label unselectable="on" for="color-youself" class="slider__label">Свой вариант</label>
 						</li>
 					</ul>
 				</div>
@@ -118,7 +118,8 @@
 				</div>
 				<div class="sidebar__position">
 					<p class="position__text">Выберите начальное положение</p>
-					<select id="select-bar" class="position__ui">Свое положение
+					<select id="select-bar" class="position__ui">
+						<option value="0" class="position__option" selected="">Свое положение</option>
 						<option value="1" class="position__option">Свое положение #1</option>
 						<option value="2" class="position__option">Свое положение #2</option>
 						<option value="3" class="position__option">Свое положение #3</option>
@@ -131,7 +132,7 @@
 				<div class="slider__add-pick">
 					<p class="add-pick__text">Добавить изображение</p>
 					<input id="show-pick" type="checkbox" class="slider__checkbox">
-					<label for="show-pick" class="slider__label">Отображать фото менеджера</label>
+					<label unselectable="on" for="show-pick" class="slider__label">Отображать фото менеджера</label>
 					<p class="add-pick__text add-pick__text_set">или добавить изображение/логотип</p>
 					<button id="add-pick" class="add-pick">+ Выбрать изображение</button>
 					<div class="wrapp">
